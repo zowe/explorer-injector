@@ -1,0 +1,23 @@
+{
+  "files": [{
+    "pattern": "atlas-local-snapshots/com/ibm/atlas/atlas-server/*.war",
+    "target": ".tmp/atlas-server.war",
+    "flat": "true",
+    "build": "explorer-server"
+  }, {
+    "pattern": "zlux-applications/explorer-mvs/*.war",
+    "target": ".tmp/explorer-mvs.war",
+    "flat": "true",
+    "build": "explorer-mvs :: master"
+  }, {
+    "pattern": "zlux-applications/explorer-uss/*.war",
+    "target": ".tmp/explorer-uss.war",
+    "flat": "true",
+    "build": "explorer-uss :: master"
+  }, {
+    "pattern": "zlux-applications/explorer-jes/*.war",
+    "target": ".tmp/explorer-jes.war",
+    "flat": "true",
+    "build": "explorer-jes :: master"
+  }]
+}
